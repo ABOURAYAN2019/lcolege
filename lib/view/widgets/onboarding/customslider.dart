@@ -19,7 +19,7 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
               children: [
                 Text(onBoardingList[i].title!,
                     style: const TextStyle(
-                        fontFamily: 'josef',
+                        fontFamily: 'almarai',
                         fontWeight: FontWeight.bold,
                         fontSize: 25)),
                 const SizedBox(height: 80),
@@ -36,7 +36,7 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                       onBoardingList[i].body!,
                       textAlign: TextAlign.center,
                       style: const TextStyle(
-                          fontFamily: 'roboto',
+                          fontFamily: 'almarai',
                           height: 2,
                           color: Color.fromARGB(255, 40, 36, 36),
                           fontWeight: FontWeight.normal,

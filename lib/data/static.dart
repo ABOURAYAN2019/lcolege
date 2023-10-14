@@ -5,24 +5,23 @@ import '../model/onboardingmodel.dart';
 
 List<OnBoardingModel> onBoardingList = [
   OnBoardingModel(
-      title: "Prévenir",
+      title: "دروس منوعة ",
       body:
-          " Prévenez l'incendie avant qu'il ne démarre  \n  : Contrôle d'extincteurs professionnels.  ",
+          " دروس منوعة بطريقة مبتكرة   \n  تمكنك في استيعاب المفاهيم بسهولة وسرعة  ",
       image: AppImageAsset.onBoardingImageTwo),
   OnBoardingModel(
-      title: "Fiablité",
+      title: "امتحانات مخصصة",
       body:
-          "Garantissez votre sérénité : Un d'extincteur de qualité et bien contrôlé .",
+          "  يمكنك اجتياز اختبارات و تحميل امتحانات \n   للتأكد من فهمك الدرس  ",
       image: AppImageAsset.onBoardingImageThree),
   OnBoardingModel(
-      title: "Archivage complet",
+      title: " تتبع التعلم",
       body:
-          "Gardez le feu sous contrôle : Archivage  \n et suivi professionnel des données d'extincteurs",
+          " يمكنك من خلال التطبيق تتبع ضبطك للدروس   \n   والحصول على ارشادات مخصصة",
       image: AppImageAsset.onBoardingImageFour),
   OnBoardingModel(
-      title: "Extincteur toujours prêt ",
-      body:
-          "Ne jouez pas avec le feu! Extincteur hors service, danger imminent. ",
+      title: "تعليم اجتماعي ",
+      body: "  يمكنك نشر نتائجك وملاحظك   \n ومشاركة انجازاتك مع أصدقائك ",
       image: AppImageAsset.onBoardingImageOne),
 ];
 
