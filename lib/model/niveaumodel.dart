@@ -1,9 +1,11 @@
+import 'package:flutter/material.dart';
+
 class Niveaumodel {
   late int? id;
   late String? slug;
   late String? namear;
   late String? namefr;
-  late String? icon;
+  late Icon? icon;
 
   Niveaumodel({this.id, this.slug, this.namear, this.namefr, this.icon});
 

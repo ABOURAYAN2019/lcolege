@@ -1,9 +1,11 @@
+import 'package:flutter/material.dart';
+
 class Matieremodel {
   late String? matiere;
   late String? slug;
   late int? id;
   late String? lang;
-  late String? icon;
+  late Icon? icon;
   late String? key;
 
   Matieremodel(
