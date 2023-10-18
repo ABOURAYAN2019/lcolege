@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lcollege/model/activitemodel.dart';
 import 'package:lcollege/model/controlmodel.dart';
 import 'package:lcollege/model/matieremodel.dart';
 import 'package:lcollege/model/niveaumodel.dart';
@@ -32,11 +33,20 @@ List<Controlmodel> controlModelList = [];
 
 List<Niveaumodel> niveauModelList = [
   Niveaumodel(
-      id: 7, namefr: "1ère année Collège", namear: "السنة الأولى إعدادي"),
+      id: 7,
+      namefr: "1ère année Collège",
+      namear: "السنة الأولى إعدادي",
+      mcolor: Colors.amber),
   Niveaumodel(
-      id: 8, namefr: "2ème année Collège", namear: "السنة الثانية إعدادي"),
+      id: 8,
+      namefr: "2ème année Collège",
+      namear: "السنة الثانية إعدادي",
+      mcolor: Colors.blue.shade500),
   Niveaumodel(
-      id: 9, namefr: "3ème année Collège", namear: "السنة الثالثة إعدادي")
+      id: 9,
+      namefr: "3ème année Collège",
+      namear: "السنة الثالثة إعدادي",
+      mcolor: Colors.green.shade500),
 ];
 
 List<Matieremodel> matiereModelList = [
@@ -57,7 +67,7 @@ List<Matieremodel> matiereModelList = [
       matiere: "Sciences de la Vie et de la Terre",
       slug: "SVT",
       lang: "fr",
-      icon: Icon(Icons.diamond_sharp)),
+      icon: Icon(Icons.biotech)),
   Matieremodel(
       id: 4,
       matiere: "العربية",
@@ -94,4 +104,31 @@ List<Matieremodel> matiereModelList = [
       slug: "INFO",
       lang: "fr",
       icon: Icon(Icons.computer)),
+];
+
+List<Activitemodel> activiteModelList = [
+  Activitemodel(
+      id: 1,
+      namear: "شرح الدرس ",
+      namefr: "ِCours",
+      slug: "cr",
+      icon: Icon(Icons.golf_course_rounded)),
+  Activitemodel(
+      id: 2,
+      namear: "تحميل الملخص",
+      namefr: "Resumé du cours",
+      slug: "pdf",
+      icon: Icon(Icons.picture_as_pdf)),
+  Activitemodel(
+      id: 3,
+      namear: "تمارين للفهم",
+      namefr: "Exercices d'applications",
+      slug: "test",
+      icon: Icon(Icons.quiz)),
+  Activitemodel(
+      id: 4,
+      namear: "تمارين أون لاين",
+      namefr: "Quiz en ligne",
+      slug: "quiz",
+      icon: Icon(Icons.check)),
 ];

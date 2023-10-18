@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(AuthController());
     return GetMaterialApp(
-        title: 'Extinchecker',
+        title: 'Collège Maroc',
         initialRoute: "/",
         home: ControlView(),
         getPages: routes,
