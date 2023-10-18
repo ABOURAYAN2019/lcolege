@@ -132,3 +132,17 @@ List<Activitemodel> activiteModelList = [
       slug: "quiz",
       icon: Icon(Icons.check)),
 ];
+
+List<Color?> myColors = [
+  Colors.lightBlue[100],
+  Colors.lightGreen[100],
+  Colors.amber[100],
+  Colors.yellow[100],
+  Colors.orange[100],
+  Colors.pink[100],
+  Colors.purple[100],
+  Colors.teal[100],
+  Colors.cyan[100],
+  Colors.indigo[100],
+  Colors.deepPurple[100],
+];

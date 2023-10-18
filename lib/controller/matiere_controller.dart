@@ -31,7 +31,8 @@ class MatiereController extends GetxController {
 
   List<Matieremodel> _matieres = matiereModelList;
   List<Matieremodel> get matieres => _matieres;
-
+  List<Color?> _colors = myColors;
+  List<Color?> get colors => _colors;
   MyServices myservices = Get.find();
 
   @override

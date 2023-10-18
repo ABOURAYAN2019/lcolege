@@ -46,10 +46,10 @@ class IndexController extends GetxController {
   }
 
   go() {
-    Get.to(() => Matieres(),
-        transition: Transition.downToUp,
-        duration: Duration(microseconds: 500),
-        arguments: [],
-        fullscreenDialog: true);
+    // await Get.to(() => Matieres(),
+    //     transition: Transition.downToUp,
+    //     duration: Duration(microseconds: 500),
+    //     arguments: [],
+    //     fullscreenDialog: true);
   }
 }

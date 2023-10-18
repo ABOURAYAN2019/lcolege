@@ -25,7 +25,10 @@ class Matieres extends StatelessWidget {
       body: SafeArea(
         child: Padding(
             padding: const EdgeInsets.only(top: 50),
-            child: MatiereList(matieremodels: controller.matieres)),
+            child: MatiereList(
+              matieremodels: controller.matieres,
+              listcolors: controller.colors,
+            )),
       ),
     );
   }

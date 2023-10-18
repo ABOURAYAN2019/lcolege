@@ -16,7 +16,12 @@ class Welcome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(onPressed: controller.go() , icon: Icon(Icons.golf_course),),
+        actions: [
+          IconButton(
+            onPressed: controller.go(),
+            icon: Icon(Icons.golf_course),
+          ),
+        ],
         title: const Text('Sample Code'),
         backgroundColor: Colors.blue,
       ),
