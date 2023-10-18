@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lcollege/model/niveaumodel.dart';
+import 'package:lcollege/controller/section_controller.dart';
+import 'package:lcollege/model/sectionmodel.dart';
+import 'package:lcollege/data/static.dart';
 
-class NiveauxGrid extends StatelessWidget {
-  final List<Niveaumodel> niveaumodels;
-  const NiveauxGrid({Key? key, required this.niveaumodels}) : super(key: key);
+class SectionsGrid extends StatelessWidget {
+  final List<Sectionmodel> setionsmodels;
+  const SectionsGrid({Key? key, required this.setionsmodels}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,28 +13,33 @@ class NiveauxGrid extends StatelessWidget {
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
       ),
-      itemCount: niveaumodels.length,
+      itemCount: setionsmodels.length,
       itemBuilder: (context, index) {
-        final niveaumodel = niveaumodels[index];
+        final setionmodel = setionsmodels[index];
 
         return Container(
           padding: EdgeInsets.all(10),
           margin: EdgeInsets.all(10),
           // color: Colors.amberAccent,
           decoration: BoxDecoration(
-            color: niveaumodel.mcolor!,
+            color: myColors[index]!,
             borderRadius: BorderRadius.all(Radius.circular(10.0)),
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              niveaumodel.icon != null
-                  ? Icon(niveaumodel.icon! as IconData?)
+              setionmodel.icon != null
+                  // ignore: unnecessary_cast
+                  ? setionmodel.icon!
                   : Icon(
                       Icons.book,
                       size: 40,
                     ),
+              SizedBox(
+                height: 10,
+              ),
               Text(
-                niveaumodel.namear!,
+                setionmodel.namear!,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 20,
@@ -40,10 +47,10 @@ class NiveauxGrid extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 20,
               ),
               Text(
-                niveaumodel.namefr!,
+                setionmodel.namefr!,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,

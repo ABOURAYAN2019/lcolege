@@ -31,7 +31,8 @@ class IndexController extends GetxController {
 
   List<Niveaumodel> _niveaux = niveauModelList;
   List<Niveaumodel> get niveaux => _niveaux;
-
+  List<Color?> _colors = myColors;
+  List<Color?> get colors => _colors;
   MyServices myservices = Get.find();
 
   @override
@@ -45,11 +46,11 @@ class IndexController extends GetxController {
     super.onClose();
   }
 
-  go() {
-    // await Get.to(() => Matieres(),
-    //     transition: Transition.downToUp,
-    //     duration: Duration(microseconds: 500),
-    //     arguments: [],
-    //     fullscreenDialog: true);
+  go() async {
+    await Get.to(() => Matieres(),
+        transition: Transition.downToUp,
+        duration: Duration(microseconds: 500),
+        arguments: [],
+        fullscreenDialog: true);
   }
 }

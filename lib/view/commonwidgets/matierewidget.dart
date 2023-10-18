@@ -13,17 +13,21 @@ class MatiereList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
-      margin: EdgeInsets.symmetric(horizontal: 10),
+      padding: EdgeInsets.all(5),
+      // margin: EdgeInsets.symmetric(horizontal: 5),
       child: ListView.builder(
         itemCount: matieremodels.length,
         itemBuilder: (context, index) {
           Matieremodel matieremodel = matieremodels[index];
 
           return Container(
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.symmetric(vertical: 10),
+            padding: EdgeInsets.all(5),
+            // margin: EdgeInsets.symmetric(vertical: 5),
             child: ListTile(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                // side: BorderSide(color: Colors.black),
+              ),
               tileColor: listcolors[index]!,
               leading: matieremodel.icon!,
               title: Text(matieremodel.matiere!),

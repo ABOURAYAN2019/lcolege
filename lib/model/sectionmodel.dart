@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Activitemodel {
+class Sectionmodel {
   late int? id;
   late String? slug;
   late String? namear;
   late String? namefr;
   late Icon? icon;
 
-  Activitemodel({this.id, this.slug, this.namear, this.namefr, this.icon});
+  Sectionmodel({this.id, this.slug, this.namear, this.namefr, this.icon});
 
-  Activitemodel.fromJson(Map<dynamic, dynamic> map) {
+  Sectionmodel.fromJson(Map<dynamic, dynamic> map) {
     if (map == null) {
       return;
     }

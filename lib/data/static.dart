@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lcollege/model/activitemodel.dart';
+import 'package:lcollege/model/sectionmodel.dart';
 import 'package:lcollege/model/controlmodel.dart';
 import 'package:lcollege/model/matieremodel.dart';
 import 'package:lcollege/model/niveaumodel.dart';
@@ -36,17 +36,18 @@ List<Niveaumodel> niveauModelList = [
       id: 7,
       namefr: "1ère année Collège",
       namear: "السنة الأولى إعدادي",
-      mcolor: Colors.amber),
+      mcolor: Colors.purple[100]),
   Niveaumodel(
       id: 8,
       namefr: "2ème année Collège",
       namear: "السنة الثانية إعدادي",
-      mcolor: Colors.blue.shade500),
+      mcolor: Colors.amber[100]),
   Niveaumodel(
-      id: 9,
-      namefr: "3ème année Collège",
-      namear: "السنة الثالثة إعدادي",
-      mcolor: Colors.green.shade500),
+    id: 9,
+    namefr: "3ème année Collège",
+    namear: "السنة الثالثة إعدادي",
+    mcolor: Colors.lightGreen[100],
+  )
 ];
 
 List<Matieremodel> matiereModelList = [
@@ -106,31 +107,31 @@ List<Matieremodel> matiereModelList = [
       icon: Icon(Icons.computer)),
 ];
 
-List<Activitemodel> activiteModelList = [
-  Activitemodel(
+List<Sectionmodel> SectionmodelList = [
+  Sectionmodel(
       id: 1,
       namear: "شرح الدرس ",
       namefr: "ِCours",
       slug: "cr",
-      icon: Icon(Icons.golf_course_rounded)),
-  Activitemodel(
+      icon: Icon(Icons.golf_course_rounded, size: 40)),
+  Sectionmodel(
       id: 2,
       namear: "تحميل الملخص",
       namefr: "Resumé du cours",
       slug: "pdf",
-      icon: Icon(Icons.picture_as_pdf)),
-  Activitemodel(
+      icon: Icon(Icons.picture_as_pdf, size: 30)),
+  Sectionmodel(
       id: 3,
       namear: "تمارين للفهم",
       namefr: "Exercices d'applications",
       slug: "test",
-      icon: Icon(Icons.quiz)),
-  Activitemodel(
+      icon: Icon(Icons.quiz, size: 30)),
+  Sectionmodel(
       id: 4,
       namear: "تمارين أون لاين",
       namefr: "Quiz en ligne",
       slug: "quiz",
-      icon: Icon(Icons.check)),
+      icon: Icon(Icons.check, size: 30)),
 ];
 
 List<Color?> myColors = [

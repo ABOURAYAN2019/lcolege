@@ -18,6 +18,12 @@ class Matieres extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [ IconButton(
+            onPressed: () {
+              controller.go();
+            },
+            icon: Icon(Icons.golf_course),
+          ),],
         title: const Text('Sample Code'),
         backgroundColor: Colors.blue,
       ),
